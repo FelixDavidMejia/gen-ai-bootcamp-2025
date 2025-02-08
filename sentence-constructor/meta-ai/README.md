@@ -1,4 +1,4 @@
-# Sentence Constructor
+# Meta-AI Powered Assistant Guide
 
 ## GenAI Provider
 Meta-AI
