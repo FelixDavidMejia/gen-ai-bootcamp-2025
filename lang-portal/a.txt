@@ -1,6 +1,0 @@
-LICENSE
-README.md
-a.txt
-genai-architecting
-lang-portal
-sentence-constructor
