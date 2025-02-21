@@ -1,0 +1,691 @@
+mkdir tests%                                                                                                                                                                  
+fmejia01@The-Beast lang-portal % mkdir tests
+fmejia01@The-Beast lang-portal % pwd
+/Users/fmejia01/Git-projects/gen-ai-bootcamp-2025/lang-portal
+fmejia01@The-Beast lang-portal % rmdir tests
+fmejia01@The-Beast lang-portal % cd backend-flash
+cd: no such file or directory: backend-flash
+fmejia01@The-Beast lang-portal % pwd
+/Users/fmejia01/Git-projects/gen-ai-bootcamp-2025/lang-portal
+fmejia01@The-Beast lang-portal % cd backend-flask
+fmejia01@The-Beast backend-flask % ls
+Readme.md                               migrate.py                              requirements.txt                        sql
+app.py                                  missing_endpoints_documentation.md      routes                                  tasks.py
+lib                                     project_directives.md                   seed
+fmejia01@The-Beast backend-flask % pwd
+/Users/fmejia01/Git-projects/gen-ai-bootcamp-2025/lang-portal/backend-flask
+fmejia01@The-Beast backend-flask % mkdir tests
+fmejia01@The-Beast backend-flask % ls
+Readme.md                               migrate.py                              requirements.txt                        sql
+app.py                                  missing_endpoints_documentation.md      routes                                  tasks.py
+lib                                     project_directives.md                   seed                                    tests
+fmejia01@The-Beast backend-flask % pwd
+/Users/fmejia01/Git-projects/gen-ai-bootcamp-2025/lang-portal/backend-flask
+fmejia01@The-Beast backend-flask % pwd
+/Users/fmejia01/Git-projects/gen-ai-bootcamp-2025/lang-portal/backend-flask
+fmejia01@The-Beast backend-flask % pwd
+/Users/fmejia01/Git-projects/gen-ai-bootcamp-2025/lang-portal/backend-flask
+fmejia01@The-Beast backend-flask % python -m pytest tests/test_study_endpoints.py -v
+xcode-select: Failed to locate 'python', requesting installation of command line developer tools.
+fmejia01@The-Beast backend-flask % python3 -m pytest tests/test_study_endpoints.py -v
+/opt/homebrew/opt/python@3.13/bin/python3.13: No module named pytest
+fmejia01@The-Beast backend-flask % pwd
+/Users/fmejia01/Git-projects/gen-ai-bootcamp-2025/lang-portal/backend-flask
+fmejia01@The-Beast backend-flask % python3 -m pip install -r requirements.txt
+error: externally-managed-environment
+
+× This environment is externally managed
+╰─> To install Python packages system-wide, try brew install
+    xyz, where xyz is the package you are trying to
+    install.
+    
+    If you wish to install a Python library that isn't in Homebrew,
+    use a virtual environment:
+    
+    python3 -m venv path/to/venv
+    source path/to/venv/bin/activate
+    python3 -m pip install xyz
+    
+    If you wish to install a Python application that isn't in Homebrew,
+    it may be easiest to use 'pipx install xyz', which will manage a
+    virtual environment for you. You can install pipx with
+    
+    brew install pipx
+    
+    You may restore the old behavior of pip by passing
+    the '--break-system-packages' flag to pip, or by adding
+    'break-system-packages = true' to your pip.conf file. The latter
+    will permanently disable this error.
+    
+    If you disable this error, we STRONGLY recommend that you additionally
+    pass the '--user' flag to pip, or set 'user = true' in your pip.conf
+    file. Failure to do this can result in a broken Homebrew installation.
+    
+    Read more about this behavior here: <https://peps.python.org/pep-0668/>
+
+note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+hint: See PEP 668 for the detailed specification.
+fmejia01@The-Beast backend-flask % python3 -m pip install -r requirements.txt
+error: externally-managed-environment
+
+× This environment is externally managed
+╰─> To install Python packages system-wide, try brew install
+    xyz, where xyz is the package you are trying to
+    install.
+    
+    If you wish to install a Python library that isn't in Homebrew,
+    use a virtual environment:
+    
+    python3 -m venv path/to/venv
+    source path/to/venv/bin/activate
+    python3 -m pip install xyz
+    
+    If you wish to install a Python application that isn't in Homebrew,
+    it may be easiest to use 'pipx install xyz', which will manage a
+    virtual environment for you. You can install pipx with
+    
+    brew install pipx
+    
+    You may restore the old behavior of pip by passing
+    the '--break-system-packages' flag to pip, or by adding
+    'break-system-packages = true' to your pip.conf file. The latter
+    will permanently disable this error.
+    
+    If you disable this error, we STRONGLY recommend that you additionally
+    pass the '--user' flag to pip, or set 'user = true' in your pip.conf
+    file. Failure to do this can result in a broken Homebrew installation.
+    
+    Read more about this behavior here: <https://peps.python.org/pep-0668/>
+
+note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+hint: See PEP 668 for the detailed specification.
+fmejia01@The-Beast backend-flask % python3 -m pip install flask
+error: externally-managed-environment
+
+× This environment is externally managed
+╰─> To install Python packages system-wide, try brew install
+    xyz, where xyz is the package you are trying to
+    install.
+    
+    If you wish to install a Python library that isn't in Homebrew,
+    use a virtual environment:
+    
+    python3 -m venv path/to/venv
+    source path/to/venv/bin/activate
+    python3 -m pip install xyz
+    
+    If you wish to install a Python application that isn't in Homebrew,
+    it may be easiest to use 'pipx install xyz', which will manage a
+    virtual environment for you. You can install pipx with
+    
+    brew install pipx
+    
+    You may restore the old behavior of pip by passing
+    the '--break-system-packages' flag to pip, or by adding
+    'break-system-packages = true' to your pip.conf file. The latter
+    will permanently disable this error.
+    
+    If you disable this error, we STRONGLY recommend that you additionally
+    pass the '--user' flag to pip, or set 'user = true' in your pip.conf
+    file. Failure to do this can result in a broken Homebrew installation.
+    
+    Read more about this behavior here: <https://peps.python.org/pep-0668/>
+
+note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+hint: See PEP 668 for the detailed specification.
+fmejia01@The-Beast backend-flask % python3 -m pip install -r requirements.txt
+error: externally-managed-environment
+
+× This environment is externally managed
+╰─> To install Python packages system-wide, try brew install
+    xyz, where xyz is the package you are trying to
+    install.
+    
+    If you wish to install a Python library that isn't in Homebrew,
+    use a virtual environment:
+    
+    python3 -m venv path/to/venv
+    source path/to/venv/bin/activate
+    python3 -m pip install xyz
+    
+    If you wish to install a Python application that isn't in Homebrew,
+    it may be easiest to use 'pipx install xyz', which will manage a
+    virtual environment for you. You can install pipx with
+    
+    brew install pipx
+    
+    You may restore the old behavior of pip by passing
+    the '--break-system-packages' flag to pip, or by adding
+    'break-system-packages = true' to your pip.conf file. The latter
+    will permanently disable this error.
+    
+    If you disable this error, we STRONGLY recommend that you additionally
+    pass the '--user' flag to pip, or set 'user = true' in your pip.conf
+    file. Failure to do this can result in a broken Homebrew installation.
+    
+    Read more about this behavior here: <https://peps.python.org/pep-0668/>
+
+note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+hint: See PEP 668 for the detailed specification.
+fmejia01@The-Beast backend-flask % python3 -m venv venv
+fmejia01@The-Beast backend-flask % source venv/bin/activate
+(venv) fmejia01@The-Beast backend-flask % pip install -r requirements.txt
+Collecting flask (from -r requirements.txt (line 1))
+  Downloading flask-3.1.0-py3-none-any.whl.metadata (2.7 kB)
+Collecting flask-cors (from -r requirements.txt (line 2))
+  Downloading Flask_Cors-5.0.0-py2.py3-none-any.whl.metadata (5.5 kB)
+Collecting invoke (from -r requirements.txt (line 3))
+  Downloading invoke-2.2.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pytest==7.4.3 (from -r requirements.txt (line 4))
+  Downloading pytest-7.4.3-py3-none-any.whl.metadata (7.9 kB)
+Collecting pytest-flask==1.3.0 (from -r requirements.txt (line 5))
+  Downloading pytest_flask-1.3.0-py3-none-any.whl.metadata (14 kB)
+Collecting iniconfig (from pytest==7.4.3->-r requirements.txt (line 4))
+  Downloading iniconfig-2.0.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting packaging (from pytest==7.4.3->-r requirements.txt (line 4))
+  Downloading packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting pluggy<2.0,>=0.12 (from pytest==7.4.3->-r requirements.txt (line 4))
+  Downloading pluggy-1.5.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting Werkzeug (from pytest-flask==1.3.0->-r requirements.txt (line 5))
+  Downloading werkzeug-3.1.3-py3-none-any.whl.metadata (3.7 kB)
+Collecting Jinja2>=3.1.2 (from flask->-r requirements.txt (line 1))
+  Downloading jinja2-3.1.5-py3-none-any.whl.metadata (2.6 kB)
+Collecting itsdangerous>=2.2 (from flask->-r requirements.txt (line 1))
+  Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting click>=8.1.3 (from flask->-r requirements.txt (line 1))
+  Downloading click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+Collecting blinker>=1.9 (from flask->-r requirements.txt (line 1))
+  Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting MarkupSafe>=2.0 (from Jinja2>=3.1.2->flask->-r requirements.txt (line 1))
+  Downloading MarkupSafe-3.0.2-cp313-cp313-macosx_11_0_arm64.whl.metadata (4.0 kB)
+Downloading pytest-7.4.3-py3-none-any.whl (325 kB)
+Downloading pytest_flask-1.3.0-py3-none-any.whl (13 kB)
+Downloading flask-3.1.0-py3-none-any.whl (102 kB)
+Downloading Flask_Cors-5.0.0-py2.py3-none-any.whl (14 kB)
+Downloading invoke-2.2.0-py3-none-any.whl (160 kB)
+Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Downloading click-8.1.8-py3-none-any.whl (98 kB)
+Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Downloading jinja2-3.1.5-py3-none-any.whl (134 kB)
+Downloading pluggy-1.5.0-py3-none-any.whl (20 kB)
+Downloading werkzeug-3.1.3-py3-none-any.whl (224 kB)
+Downloading iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+Downloading packaging-24.2-py3-none-any.whl (65 kB)
+Downloading MarkupSafe-3.0.2-cp313-cp313-macosx_11_0_arm64.whl (12 kB)
+Installing collected packages: pluggy, packaging, MarkupSafe, itsdangerous, invoke, iniconfig, click, blinker, Werkzeug, pytest, Jinja2, flask, pytest-flask, flask-cors
+Successfully installed Jinja2-3.1.5 MarkupSafe-3.0.2 Werkzeug-3.1.3 blinker-1.9.0 click-8.1.8 flask-3.1.0 flask-cors-5.0.0 iniconfig-2.0.0 invoke-2.2.0 itsdangerous-2.2.0 packaging-24.2 pluggy-1.5.0 pytest-7.4.3 pytest-flask-1.3.0
+
+[notice] A new release of pip is available: 25.0 -> 25.0.1
+[notice] To update, run: pip install --upgrade pip
+(venv) fmejia01@The-Beast backend-flask % pip install --upgrade pip
+Requirement already satisfied: pip in ./venv/lib/python3.13/site-packages (25.0)
+Collecting pip
+  Downloading pip-25.0.1-py3-none-any.whl.metadata (3.7 kB)
+Downloading pip-25.0.1-py3-none-any.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 3.0 MB/s eta 0:00:00
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 25.0
+    Uninstalling pip-25.0:
+      Successfully uninstalled pip-25.0
+Successfully installed pip-25.0.1
+(venv) fmejia01@The-Beast backend-flask % pytest tests/test_study_endpoints.py -v
+============================================================================ test session starts =============================================================================
+platform darwin -- Python 3.13.2, pytest-7.4.3, pluggy-1.5.0 -- /Users/fmejia01/Git-projects/gen-ai-bootcamp-2025/lang-portal/backend-flask/venv/bin/python3.13
+cachedir: .pytest_cache
+rootdir: /Users/fmejia01/Git-projects/gen-ai-bootcamp-2025/lang-portal/backend-flask
+plugins: flask-1.3.0
+collected 0 items / 1 error                                                                                                                                                  
+
+=================================================================================== ERRORS ===================================================================================
+_______________________________________________________________ ERROR collecting tests/test_study_endpoints.py _______________________________________________________________
+ImportError while importing test module '/Users/fmejia01/Git-projects/gen-ai-bootcamp-2025/lang-portal/backend-flask/tests/test_study_endpoints.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/opt/homebrew/Cellar/python@3.13/3.13.2/Frameworks/Python.framework/Versions/3.13/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests/test_study_endpoints.py:3: in <module>
+    from app import create_app
+E   ModuleNotFoundError: No module named 'app'
+========================================================================== short test summary info ===========================================================================
+ERROR tests/test_study_endpoints.py
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+============================================================================== 1 error in 0.04s ==============================================================================
+(venv) fmejia01@The-Beast backend-flask % pwd
+/Users/fmejia01/Git-projects/gen-ai-bootcamp-2025/lang-portal/backend-flask
+(venv) fmejia01@The-Beast backend-flask % pytest tests/test_study_endpoints.py -v
+============================================================================ test session starts =============================================================================
+platform darwin -- Python 3.13.2, pytest-7.4.3, pluggy-1.5.0 -- /Users/fmejia01/Git-projects/gen-ai-bootcamp-2025/lang-portal/backend-flask/venv/bin/python3.13
+cachedir: .pytest_cache
+rootdir: /Users/fmejia01/Git-projects/gen-ai-bootcamp-2025/lang-portal/backend-flask
+plugins: flask-1.3.0
+collected 4 items                                                                                                                                                            
+
+tests/test_study_endpoints.py::test_get_group_words_raw ERROR                                                                                                          [ 25%]
+tests/test_study_endpoints.py::test_create_study_session ERROR                                                                                                         [ 50%]
+tests/test_study_endpoints.py::test_create_session_review ERROR                                                                                                        [ 75%]
+tests/test_study_endpoints.py::test_complete_study_flow ERROR                                                                                                          [100%]
+
+=================================================================================== ERRORS ===================================================================================
+_________________________________________________________________ ERROR at setup of test_get_group_words_raw _________________________________________________________________
+
+    @pytest.fixture
+    def client():
+>       app = create_app({"TESTING": True})
+
+tests/test_study_endpoints.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+test_config = {'TESTING': True}
+
+    def create_app(test_config=None):
+        app = Flask(__name__)
+    
+        if test_config is None:
+            app.config.from_mapping(
+                DATABASE='words.db'
+            )
+        else:
+            app.config.update(test_config)
+    
+        # Initialize database first since we need it for CORS configuration
+>       app.db = Db(database=app.config['DATABASE'])
+E       KeyError: 'DATABASE'
+
+app.py:42: KeyError
+________________________________________________________________ ERROR at setup of test_create_study_session _________________________________________________________________
+
+    @pytest.fixture
+    def client():
+>       app = create_app({"TESTING": True})
+
+tests/test_study_endpoints.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+test_config = {'TESTING': True}
+
+    def create_app(test_config=None):
+        app = Flask(__name__)
+    
+        if test_config is None:
+            app.config.from_mapping(
+                DATABASE='words.db'
+            )
+        else:
+            app.config.update(test_config)
+    
+        # Initialize database first since we need it for CORS configuration
+>       app.db = Db(database=app.config['DATABASE'])
+E       KeyError: 'DATABASE'
+
+app.py:42: KeyError
+________________________________________________________________ ERROR at setup of test_create_session_review ________________________________________________________________
+
+    @pytest.fixture
+    def client():
+>       app = create_app({"TESTING": True})
+
+tests/test_study_endpoints.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+test_config = {'TESTING': True}
+
+    def create_app(test_config=None):
+        app = Flask(__name__)
+    
+        if test_config is None:
+            app.config.from_mapping(
+                DATABASE='words.db'
+            )
+        else:
+            app.config.update(test_config)
+    
+        # Initialize database first since we need it for CORS configuration
+>       app.db = Db(database=app.config['DATABASE'])
+E       KeyError: 'DATABASE'
+
+app.py:42: KeyError
+_________________________________________________________________ ERROR at setup of test_complete_study_flow _________________________________________________________________
+
+    @pytest.fixture
+    def client():
+>       app = create_app({"TESTING": True})
+
+tests/test_study_endpoints.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+test_config = {'TESTING': True}
+
+    def create_app(test_config=None):
+        app = Flask(__name__)
+    
+        if test_config is None:
+            app.config.from_mapping(
+                DATABASE='words.db'
+            )
+        else:
+            app.config.update(test_config)
+    
+        # Initialize database first since we need it for CORS configuration
+>       app.db = Db(database=app.config['DATABASE'])
+E       KeyError: 'DATABASE'
+
+app.py:42: KeyError
+========================================================================== short test summary info ===========================================================================
+ERROR tests/test_study_endpoints.py::test_get_group_words_raw - KeyError: 'DATABASE'
+ERROR tests/test_study_endpoints.py::test_create_study_session - KeyError: 'DATABASE'
+ERROR tests/test_study_endpoints.py::test_create_session_review - KeyError: 'DATABASE'
+ERROR tests/test_study_endpoints.py::test_complete_study_flow - KeyError: 'DATABASE'
+============================================================================= 4 errors in 0.53s ==============================================================================
+(venv) fmejia01@The-Beast backend-flask % pytest tests/test_study_endpoints.py -v
+============================================================================ test session starts =============================================================================
+platform darwin -- Python 3.13.2, pytest-7.4.3, pluggy-1.5.0 -- /Users/fmejia01/Git-projects/gen-ai-bootcamp-2025/lang-portal/backend-flask/venv/bin/python3.13
+cachedir: .pytest_cache
+rootdir: /Users/fmejia01/Git-projects/gen-ai-bootcamp-2025/lang-portal/backend-flask
+plugins: flask-1.3.0
+collected 4 items                                                                                                                                                            
+
+tests/test_study_endpoints.py::test_get_group_words_raw ERROR                                                                                                          [ 25%]
+tests/test_study_endpoints.py::test_create_study_session ERROR                                                                                                         [ 50%]
+tests/test_study_endpoints.py::test_create_session_review ERROR                                                                                                        [ 75%]
+tests/test_study_endpoints.py::test_complete_study_flow ERROR                                                                                                          [100%]
+
+=================================================================================== ERRORS ===================================================================================
+_________________________________________________________________ ERROR at setup of test_get_group_words_raw _________________________________________________________________
+
+app = <Flask 'app'>
+
+    @pytest.fixture
+    def init_database(app):
+        # Initialize the test database with some test data
+        with app.app_context():
+            cursor = app.db.cursor()
+    
+            # Create a test group
+>           cursor.execute('INSERT INTO groups (name) VALUES (?)', ('Test Group',))
+E           sqlite3.OperationalError: no such table: groups
+
+tests/test_study_endpoints.py:15: OperationalError
+________________________________________________________________ ERROR at setup of test_create_study_session _________________________________________________________________
+
+app = <Flask 'app'>
+
+    @pytest.fixture
+    def init_database(app):
+        # Initialize the test database with some test data
+        with app.app_context():
+            cursor = app.db.cursor()
+    
+            # Create a test group
+>           cursor.execute('INSERT INTO groups (name) VALUES (?)', ('Test Group',))
+E           sqlite3.OperationalError: no such table: groups
+
+tests/test_study_endpoints.py:15: OperationalError
+________________________________________________________________ ERROR at setup of test_create_session_review ________________________________________________________________
+
+app = <Flask 'app'>
+
+    @pytest.fixture
+    def init_database(app):
+        # Initialize the test database with some test data
+        with app.app_context():
+            cursor = app.db.cursor()
+    
+            # Create a test group
+>           cursor.execute('INSERT INTO groups (name) VALUES (?)', ('Test Group',))
+E           sqlite3.OperationalError: no such table: groups
+
+tests/test_study_endpoints.py:15: OperationalError
+_________________________________________________________________ ERROR at setup of test_complete_study_flow _________________________________________________________________
+
+app = <Flask 'app'>
+
+    @pytest.fixture
+    def init_database(app):
+        # Initialize the test database with some test data
+        with app.app_context():
+            cursor = app.db.cursor()
+    
+            # Create a test group
+>           cursor.execute('INSERT INTO groups (name) VALUES (?)', ('Test Group',))
+E           sqlite3.OperationalError: no such table: groups
+
+tests/test_study_endpoints.py:15: OperationalError
+========================================================================== short test summary info ===========================================================================
+ERROR tests/test_study_endpoints.py::test_get_group_words_raw - sqlite3.OperationalError: no such table: groups
+ERROR tests/test_study_endpoints.py::test_create_study_session - sqlite3.OperationalError: no such table: groups
+ERROR tests/test_study_endpoints.py::test_create_session_review - sqlite3.OperationalError: no such table: groups
+ERROR tests/test_study_endpoints.py::test_complete_study_flow - sqlite3.OperationalError: no such table: groups
+============================================================================= 4 errors in 0.11s ==============================================================================
+(venv) fmejia01@The-Beast backend-flask % pytest tests/test_study_endpoints.py -v
+============================================================================ test session starts =============================================================================
+platform darwin -- Python 3.13.2, pytest-7.4.3, pluggy-1.5.0 -- /Users/fmejia01/Git-projects/gen-ai-bootcamp-2025/lang-portal/backend-flask/venv/bin/python3.13
+cachedir: .pytest_cache
+rootdir: /Users/fmejia01/Git-projects/gen-ai-bootcamp-2025/lang-portal/backend-flask
+plugins: flask-1.3.0
+collected 4 items                                                                                                                                                            
+
+tests/test_study_endpoints.py::test_get_group_words_raw ERROR                                                                                                          [ 25%]
+tests/test_study_endpoints.py::test_create_study_session ERROR                                                                                                         [ 50%]
+tests/test_study_endpoints.py::test_create_session_review ERROR                                                                                                        [ 75%]
+tests/test_study_endpoints.py::test_complete_study_flow ERROR                                                                                                          [100%]
+
+=================================================================================== ERRORS ===================================================================================
+_________________________________________________________________ ERROR at setup of test_get_group_words_raw _________________________________________________________________
+
+app = <Flask 'app'>
+
+    @pytest.fixture
+    def init_database(app):
+        # Initialize the test database with some test data
+        with app.app_context():
+            cursor = app.db.cursor()
+    
+            # Create a test group
+            cursor.execute('INSERT INTO groups (name) VALUES (?)', ('Test Group',))
+            group_id = cursor.lastrowid
+    
+            # Create a test activity
+            cursor.execute('INSERT INTO study_activities (name, url) VALUES (?, ?)',
+                          ('Test Activity', 'http://test.com'))
+            activity_id = cursor.lastrowid
+    
+            # Create a test word
+>           cursor.execute('INSERT INTO words (kanji, romaji, english) VALUES (?, ?, ?)',
+                          ('テスト', 'tesuto', 'test'))
+E           sqlite3.IntegrityError: NOT NULL constraint failed: words.parts
+
+tests/test_study_endpoints.py:24: IntegrityError
+________________________________________________________________ ERROR at setup of test_create_study_session _________________________________________________________________
+
+app = <Flask 'app'>
+
+    @pytest.fixture
+    def init_database(app):
+        # Initialize the test database with some test data
+        with app.app_context():
+            cursor = app.db.cursor()
+    
+            # Create a test group
+            cursor.execute('INSERT INTO groups (name) VALUES (?)', ('Test Group',))
+            group_id = cursor.lastrowid
+    
+            # Create a test activity
+            cursor.execute('INSERT INTO study_activities (name, url) VALUES (?, ?)',
+                          ('Test Activity', 'http://test.com'))
+            activity_id = cursor.lastrowid
+    
+            # Create a test word
+>           cursor.execute('INSERT INTO words (kanji, romaji, english) VALUES (?, ?, ?)',
+                          ('テスト', 'tesuto', 'test'))
+E           sqlite3.IntegrityError: NOT NULL constraint failed: words.parts
+
+tests/test_study_endpoints.py:24: IntegrityError
+________________________________________________________________ ERROR at setup of test_create_session_review ________________________________________________________________
+
+app = <Flask 'app'>
+
+    @pytest.fixture
+    def init_database(app):
+        # Initialize the test database with some test data
+        with app.app_context():
+            cursor = app.db.cursor()
+    
+            # Create a test group
+            cursor.execute('INSERT INTO groups (name) VALUES (?)', ('Test Group',))
+            group_id = cursor.lastrowid
+    
+            # Create a test activity
+            cursor.execute('INSERT INTO study_activities (name, url) VALUES (?, ?)',
+                          ('Test Activity', 'http://test.com'))
+            activity_id = cursor.lastrowid
+    
+            # Create a test word
+>           cursor.execute('INSERT INTO words (kanji, romaji, english) VALUES (?, ?, ?)',
+                          ('テスト', 'tesuto', 'test'))
+E           sqlite3.IntegrityError: NOT NULL constraint failed: words.parts
+
+tests/test_study_endpoints.py:24: IntegrityError
+_________________________________________________________________ ERROR at setup of test_complete_study_flow _________________________________________________________________
+
+app = <Flask 'app'>
+
+    @pytest.fixture
+    def init_database(app):
+        # Initialize the test database with some test data
+        with app.app_context():
+            cursor = app.db.cursor()
+    
+            # Create a test group
+            cursor.execute('INSERT INTO groups (name) VALUES (?)', ('Test Group',))
+            group_id = cursor.lastrowid
+    
+            # Create a test activity
+            cursor.execute('INSERT INTO study_activities (name, url) VALUES (?, ?)',
+                          ('Test Activity', 'http://test.com'))
+            activity_id = cursor.lastrowid
+    
+            # Create a test word
+>           cursor.execute('INSERT INTO words (kanji, romaji, english) VALUES (?, ?, ?)',
+                          ('テスト', 'tesuto', 'test'))
+E           sqlite3.IntegrityError: NOT NULL constraint failed: words.parts
+
+tests/test_study_endpoints.py:24: IntegrityError
+========================================================================== short test summary info ===========================================================================
+ERROR tests/test_study_endpoints.py::test_get_group_words_raw - sqlite3.IntegrityError: NOT NULL constraint failed: words.parts
+ERROR tests/test_study_endpoints.py::test_create_study_session - sqlite3.IntegrityError: NOT NULL constraint failed: words.parts
+ERROR tests/test_study_endpoints.py::test_create_session_review - sqlite3.IntegrityError: NOT NULL constraint failed: words.parts
+ERROR tests/test_study_endpoints.py::test_complete_study_flow - sqlite3.IntegrityError: NOT NULL constraint failed: words.parts
+============================================================================= 4 errors in 0.12s ==============================================================================
+(venv) fmejia01@The-Beast backend-flask % pytest tests/test_study_endpoints.py -v
+============================================================================ test session starts =============================================================================
+platform darwin -- Python 3.13.2, pytest-7.4.3, pluggy-1.5.0 -- /Users/fmejia01/Git-projects/gen-ai-bootcamp-2025/lang-portal/backend-flask/venv/bin/python3.13
+cachedir: .pytest_cache
+rootdir: /Users/fmejia01/Git-projects/gen-ai-bootcamp-2025/lang-portal/backend-flask
+plugins: flask-1.3.0
+collected 4 items                                                                                                                                                            
+
+tests/test_study_endpoints.py::test_get_group_words_raw PASSED                                                                                                         [ 25%]
+tests/test_study_endpoints.py::test_create_study_session FAILED                                                                                                        [ 50%]
+tests/test_study_endpoints.py::test_create_session_review FAILED                                                                                                       [ 75%]
+tests/test_study_endpoints.py::test_complete_study_flow FAILED                                                                                                         [100%]
+
+================================================================================== FAILURES ==================================================================================
+_________________________________________________________________________ test_create_study_session __________________________________________________________________________
+
+client = <FlaskClient <Flask 'app'>>, init_database = {'activity_id': 1, 'group_id': 1, 'word_id': 1}
+
+    def test_create_study_session(client, init_database):
+        # Test successful creation
+        response = client.post('/study-sessions',
+            json={
+                'group_id': init_database['group_id'],
+                'study_activity_id': init_database['activity_id']
+            })
+>       assert response.status_code == 201
+E       assert 404 == 201
+E        +  where 404 = <WrapperTestResponse streamed [404 NOT FOUND]>.status_code
+
+tests/test_study_endpoints.py:66: AssertionError
+_________________________________________________________________________ test_create_session_review _________________________________________________________________________
+
+client = <FlaskClient <Flask 'app'>>, init_database = {'activity_id': 1, 'group_id': 1, 'word_id': 1}
+
+    def test_create_session_review(client, init_database):
+        # First create a session
+        response = client.post('/study-sessions',
+            json={
+                'group_id': init_database['group_id'],
+                'study_activity_id': init_database['activity_id']
+            })
+>       session_data = json.loads(response.data)
+
+tests/test_study_endpoints.py:91: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.13/3.13.2/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/__init__.py:346: in loads
+    return _default_decoder.decode(s)
+/opt/homebrew/Cellar/python@3.13/3.13.2/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/decoder.py:345: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <json.decoder.JSONDecoder object at 0x100ccfa10>
+s = '<!doctype html>\n<html lang=en>\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n'
+idx = 0
+
+    def raw_decode(self, s, idx=0):
+        """Decode a JSON document from ``s`` (a ``str`` beginning with
+        a JSON document) and return a 2-tuple of the Python
+        representation and the index in ``s`` where the document ended.
+    
+        This can be used to decode a JSON document from a string that may
+        have extraneous data at the end.
+    
+        """
+        try:
+            obj, end = self.scan_once(s, idx)
+        except StopIteration as err:
+>           raise JSONDecodeError("Expecting value", s, err.value) from None
+E           json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+/opt/homebrew/Cellar/python@3.13/3.13.2/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/decoder.py:363: JSONDecodeError
+__________________________________________________________________________ test_complete_study_flow __________________________________________________________________________
+
+client = <FlaskClient <Flask 'app'>>, init_database = {'activity_id': 1, 'group_id': 1, 'word_id': 1}
+
+    def test_complete_study_flow(client, init_database):
+        # 1. Get words from a group
+        response = client.get(f'/groups/{init_database["group_id"]}/words/raw')
+        assert response.status_code == 200
+        words_data = json.loads(response.data)
+        assert len(words_data['words']) > 0
+    
+        # 2. Create a study session
+        response = client.post('/study-sessions',
+            json={
+                'group_id': init_database['group_id'],
+                'study_activity_id': init_database['activity_id']
+            })
+>       assert response.status_code == 201
+E       assert 404 == 201
+E        +  where 404 = <WrapperTestResponse streamed [404 NOT FOUND]>.status_code
+
+tests/test_study_endpoints.py:128: AssertionError
+========================================================================== short test summary info ===========================================================================
+FAILED tests/test_study_endpoints.py::test_create_study_session - assert 404 == 201
+FAILED tests/test_study_endpoints.py::test_create_session_review - json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+FAILED tests/test_study_endpoints.py::test_complete_study_flow - assert 404 == 201
+======================================================================== 3 failed, 1 passed in 0.14s =========================================================================
+(venv) fmejia01@The-Beast backend-flask % pytest tests/test_study_endpoints.py -v
+============================================================================ test session starts =============================================================================
+platform darwin -- Python 3.13.2, pytest-7.4.3, pluggy-1.5.0 -- /Users/fmejia01/Git-projects/gen-ai-bootcamp-2025/lang-portal/backend-flask/venv/bin/python3.13
+cachedir: .pytest_cache
+rootdir: /Users/fmejia01/Git-projects/gen-ai-bootcamp-2025/lang-portal/backend-flask
+plugins: flask-1.3.0
+collected 4 items                                                                                                                                                            
+
+tests/test_study_endpoints.py::test_get_group_words_raw PASSED                                                                                                         [ 25%]
+tests/test_study_endpoints.py::test_create_study_session PASSED                                                                                                        [ 50%]
+tests/test_study_endpoints.py::test_create_session_review PASSED                                                                                                       [ 75%]
+tests/test_study_endpoints.py::test_complete_study_flow PASSED                                                                                                         [100%]
+
+============================================================================= 4 passed in 0.11s ==============================================================================

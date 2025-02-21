@@ -151,7 +151,99 @@ def load(app):
     except Exception as e:
       return jsonify({"error": str(e)}), 500
 
-  # todo POST /study_sessions/:id/review
+  @app.route('/api/study-sessions', methods=['POST'])
+  @cross_origin()
+  def create_study_session():
+    try:
+      data = request.get_json()
+      
+      # Validate required fields
+      if not data or 'group_id' not in data or 'study_activity_id' not in data:
+        return jsonify({"error": "Missing required fields"}), 400
+      
+      group_id = data['group_id']
+      study_activity_id = data['study_activity_id']
+      cursor = app.db.cursor()
+      
+      # Validate group exists
+      cursor.execute('SELECT id FROM groups WHERE id = ?', (group_id,))
+      if not cursor.fetchone():
+        return jsonify({"error": "Group not found"}), 404
+      
+      # Validate study activity exists
+      cursor.execute('SELECT id FROM study_activities WHERE id = ?', (study_activity_id,))
+      if not cursor.fetchone():
+        return jsonify({"error": "Study activity not found"}), 404
+      
+      # Create new study session
+      cursor.execute('''
+        INSERT INTO study_sessions (group_id, study_activity_id)
+        VALUES (?, ?)
+      ''', (group_id, study_activity_id))
+      
+      app.db.commit()
+      session_id = cursor.lastrowid
+      
+      # Get created timestamp
+      cursor.execute('SELECT created_at FROM study_sessions WHERE id = ?', (session_id,))
+      created_at = cursor.fetchone()['created_at']
+      
+      return jsonify({
+        "session_id": session_id,
+        "created_at": created_at
+      }), 201
+    except Exception as e:
+      return jsonify({"error": str(e)}), 500
+
+  @app.route('/api/study-sessions/<int:id>/review', methods=['POST'])
+  @cross_origin()
+  def create_session_review(id):
+    try:
+      data = request.get_json()
+      
+      # Validate required fields
+      if not data or 'word_id' not in data or 'correct' not in data:
+        return jsonify({"error": "Missing required fields"}), 400
+      
+      word_id = data['word_id']
+      correct = bool(data['correct'])
+      cursor = app.db.cursor()
+      
+      # Validate study session exists
+      cursor.execute('SELECT group_id FROM study_sessions WHERE id = ?', (id,))
+      session = cursor.fetchone()
+      if not session:
+        return jsonify({"error": "Study session not found"}), 404
+      
+      group_id = session['group_id']
+      
+      # Validate word belongs to session's group
+      cursor.execute('''
+        SELECT 1 FROM word_groups 
+        WHERE group_id = ? AND word_id = ?
+      ''', (group_id, word_id))
+      if not cursor.fetchone():
+        return jsonify({"error": "Word does not belong to session's group"}), 403
+      
+      # Create review record
+      cursor.execute('''
+        INSERT INTO word_review_items (word_id, study_session_id, correct)
+        VALUES (?, ?, ?)
+      ''', (word_id, id, correct))
+      
+      app.db.commit()
+      review_id = cursor.lastrowid
+      
+      # Get created timestamp
+      cursor.execute('SELECT created_at FROM word_review_items WHERE id = ?', (review_id,))
+      created_at = cursor.fetchone()['created_at']
+      
+      return jsonify({
+        "review_id": review_id,
+        "created_at": created_at
+      }), 201
+    except Exception as e:
+      return jsonify({"error": str(e)}), 500
 
   @app.route('/api/study-sessions/reset', methods=['POST'])
   @cross_origin()
